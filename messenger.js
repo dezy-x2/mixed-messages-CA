@@ -21,4 +21,10 @@ const sentences = [`A vacation is when you take a trip to some ${pick("adjective
                     three ${pick("nouns")}s a day, and fathers play golf, and mothers sit around ${pick("verbs")}ing.`, `Last summer, my little brother fell in a/an ${pick("nouns")}
                     and got poison ${pick("nouns")} all over his ${pick("nouns")}.`, `My family is going to (the) ${pick("nouns")}, and I will practice ${pick("verbs")}ing.`, 
                     `Parents need vacations more than kids because parents are always very ${pick("adjectives")} and because they have to work 8 hours every day all year making 
-                    enough ${pick("nouns")}s to pay for the vacation`]
+                    enough ${pick("nouns")}s to pay for the vacation`];
+
+function pickSentence() {
+    return sentences[Math.floor(Math.random() * sentences.length)];
+};
+
+console.log(pickSentence());
